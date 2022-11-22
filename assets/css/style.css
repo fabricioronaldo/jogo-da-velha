@@ -1,0 +1,16 @@
+:root {
+
+};
+
+.tabuleiro{
+
+}
+
+.tabuleiro__posicao {
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    border: 1px solid #f4f4f4;
+    display: inline-block;
+}
+}
