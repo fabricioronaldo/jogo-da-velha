@@ -1,16 +1,44 @@
 :root {
-
-};
-
-.tabuleiro{
-
+    --ciza: #f4f4f4;
+    --preto: #010101;
 }
+
+.jogo-da-velha {
+    text-align: center;
+}
+
 
 .tabuleiro__posicao {
-    width: 200px;
-    height: 200px;
-    background-color: blueviolet;
-    border: 1px solid #f4f4f4;
+    width: 150px;
+    height: 150px;
+    background-color: var(--cinza);
+    border: 1px solid var(--preto);
     display: inline-block;
 }
+
+.o, .x{
+    position: relative;
+    
+}
+
+.o::after {
+    position: absolute;
+    content: "\2B55";
+    font-size: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.x::after {
+    position: absolute;
+    content: "\2716";
+    font-size: 110px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
 }
