@@ -1,32 +1,33 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    let tabuleiro = document.querySelectorAll(".tabuleiro__posicao");
+    let quadrado = document.querySelectorAll(".tabuleiro__posicao");
 
-    tabuleiro.forEach(posicao => {
-        posicao.addEventListener('click', estadoClick);
+    quadrado.forEach((quadrado) => {
+        quadrado.addEventListener('click', estadoClick);
     })
 
 })
 
 function estadoClick(evento) {
 
-    let tabuleiro = evento.target;
-    let posicao = tabuleiro.id;
+    let quadrado = evento.target;
+    let posicao = quadrado.id;
 
     movimento(posicao);
-    atualizaTabuleiro();
+    atualizaQuadrado();
 
 }
 
-function atualizaTabuleiro(){
-    let tabuleiro = document.querySelectorAll(".tabuleiro__posicao");
+function atualizaQuadrado() {
+    
+    let quadrado = document.querySelectorAll(".tabuleiro__posicao");
 
-    tabuleiro.forEach((p) =>{
-        let posicao = p.id;
+    quadrado.forEach((quadrado) =>{
+        let posicao = quadrado.id;
         let simbolo = tabuleiro[posicao];
 
         if(simbolo != '') {
-            tabuleiro.innerHTML = `<div class='${simbolo}'></div>`
+            quadrado.innerHTML = `<div class='${simbolo}'></div>`;
         }
 
     })

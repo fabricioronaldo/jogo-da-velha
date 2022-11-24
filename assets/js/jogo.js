@@ -8,7 +8,7 @@ function movimento(posicao){
 
     if (jogador == 0) {
         jogador = 1;
-    }else {
+    } else {
         jogador = 0;
     }
 }
