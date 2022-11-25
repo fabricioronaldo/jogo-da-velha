@@ -1,18 +1,27 @@
 :root {
+
     --ciza: #f4f4f4;
     --preto: #010101;
 }
 
-.jogo-da-velha {
+body{
     text-align: center;
+    background-image: url("../img/fundo.png");
+    background-size: cover;
 }
 
+.titulo {
+    color: #f4f4f4;
+   
+
+}
 
 .tabuleiro__posicao {
     width: 150px;
     height: 150px;
-    background-color: var(--cinza);
-    border: 1px solid var(--preto);
+    background: var(--ciza);
+    opacity: 80%;
+    
     display: inline-block;
 }
 

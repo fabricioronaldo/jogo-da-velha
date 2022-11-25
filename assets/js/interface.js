@@ -12,8 +12,16 @@ function estadoClick(evento) {
 
     let quadrado = evento.target;
     let posicao = quadrado.id;
+    
+    if(movimento(posicao)){
 
-    movimento(posicao);
+        setTimeout(() => {
+            alert ("Fim de Jogo - O vencedor foi " + " | " + simbolo[jogador] + " | ");
+        },10);
+
+    }
+
+    
     atualizaQuadrado();
 
 }
@@ -33,4 +41,3 @@ function atualizaQuadrado() {
     })
 }
 
-console.log(simbolo);
